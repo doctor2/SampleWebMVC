@@ -1,0 +1,31 @@
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\Фримен А\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
