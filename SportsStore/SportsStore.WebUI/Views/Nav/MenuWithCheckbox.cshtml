@@ -14,15 +14,18 @@ new
     @class = link == ViewBag.SelectedCategory ? "selected" : null
 })
 }*@
-
-@using (Html.BeginForm("List", "Product"))
-{
+<button class="btn btn-info" data-toggle="collapse" data-target="#hide-me">Выбор категории</button>
+<div id="hide-me" class="collapse in">
+   @using (Html.BeginForm("ListWithOtherPagePost", "Product"))
+   {
     <br />
-    foreach (var item in Model)
-    {
-        @Html.CheckBox(item, (bool)ViewBag[item]);
+       foreach (var item in Model)
+       {
+        @Html.CheckBox(item, (Request.Form[item] ?? string.Empty).Contains("true"));
         @Html.DisplayFor(i => item);
         <br />
-    }
+       }
     <input type="submit" value="Отправить" />
-}
+   }
+</div>
+

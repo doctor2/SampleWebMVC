@@ -30,17 +30,6 @@ namespace SportsStore.WebUI.Controllers
             .Select(x => x.Category)
             .Distinct()
             .OrderBy(x => x);
-            foreach (var item in categories)
-            {
-                if (category.Contains(item))
-                {
-                    ViewBag[item] = true;
-                }
-                else
-                {
-                    ViewBag[item] = false;
-                }
-            }
             return PartialView(categories);
         }
     }

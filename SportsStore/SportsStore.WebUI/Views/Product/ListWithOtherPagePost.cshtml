@@ -1,0 +1,17 @@
+﻿@model LessonProject.Models.Info.PageableData<SportsStore.Domain.Entities.Product>
+@{
+    ViewBag.Title = "Products";
+}
+<div class="item">
+    @foreach (var p in Model.List)
+    {
+        Html.RenderPartial("ProductSummary", p);
+    }
+</div>
+<div class="pagination pagination-right">
+    @*class="pager"*@
+@Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPage", new { page = x }))
+</div>
+@*<div class="pagination">
+        @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("Index", new { page = x, searchString }))
+    </div>*@

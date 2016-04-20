@@ -29,3 +29,13 @@ C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsSt
 C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.xml
 C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Ivan\Documents\Visual Studio 2015\Projects\FrimanA\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
