@@ -8,7 +8,7 @@
         Html.RenderPartial("ProductSummary", p);
     }
 </div>
-<div class="pagination pagination-right">@*class="pager"*@
+<div >@*class="pager" class="pagination pagination-right"*@
     @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPage", new { page = x }))
 </div>
 @*<div class="pagination">

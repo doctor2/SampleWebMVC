@@ -15,15 +15,19 @@ namespace SportsStore.WebUI.HtmlHelpers
             StringBuilder builder = new StringBuilder();
 
             //Prev
-            var prevBuilder = new TagBuilder("a");
-            prevBuilder.InnerHtml = "&laquo;";
+            TagBuilder prevBuilder;// = new TagBuilder("a");
+            
             if (currentPage == 1)
             {
-                prevBuilder.MergeAttribute("href", "#");
-                builder.AppendLine("<li class=\"active\">" + prevBuilder.ToString() + "</li>");
+                prevBuilder = new TagBuilder("span");
+                prevBuilder.InnerHtml = "&laquo;";
+              //  prevBuilder.MergeAttribute("href", "");//#
+                builder.AppendLine("<li class=\"disabled\">" + prevBuilder.ToString() + "</li>");
             }
             else
             {
+                prevBuilder = new TagBuilder("a");
+                prevBuilder.InnerHtml = "&laquo;";
                 prevBuilder.MergeAttribute("href", pageUrl.Invoke(currentPage - 1));
                 builder.AppendLine("<li>" + prevBuilder.ToString() + "</li>");
             }
@@ -58,19 +62,22 @@ namespace SportsStore.WebUI.HtmlHelpers
                 }
             }
             //Next
-            var nextBuilder = new TagBuilder("a");
-            nextBuilder.InnerHtml = "&raquo;";
+            TagBuilder nextBuilder;// = new TagBuilder("a");            
             if (currentPage == totalPages)
             {
-                nextBuilder.MergeAttribute("href", "#");
-                builder.AppendLine("<li class=\"active\">" + nextBuilder.ToString() + "</li>");
+                nextBuilder = new TagBuilder("span");
+                nextBuilder.InnerHtml = "&raquo;";
+                nextBuilder.MergeAttribute("href", "");//#
+                builder.AppendLine("<li class=\"disabled\">" + nextBuilder.ToString() + "</li>");
             }
             else
             {
+                nextBuilder = new TagBuilder("a");
+                nextBuilder.InnerHtml = "&raquo;";
                 nextBuilder.MergeAttribute("href", pageUrl.Invoke(currentPage + 1));
                 builder.AppendLine("<li>" + nextBuilder.ToString() + "</li>");
             }
-            return new MvcHtmlString("<ul>" + builder.ToString() + "</ul>");
+            return new MvcHtmlString("<ul class = \"pagination pagination-right\">" + builder.ToString() + "</ul>");
         }
     }
 }

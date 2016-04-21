@@ -19,7 +19,8 @@ namespace SportsStore.WebUI.Controllers
         {
             this.repository = productRepository;
         }
-        public ViewResult ListWithOtherPage(string category, int page = 1)
+        [HttpGet]
+        public ViewResult ListWithOtherPage( int page = 1)
         {
             //var Products = repository.Products
             //                                .Where(p => category == null || p.Category == category)
@@ -29,8 +30,8 @@ namespace SportsStore.WebUI.Controllers
             var data = new PageableData<Product>(repository.Products.ToList(), page, 5);
             return View(data);
         }
-        [HttpPost]
-        public ViewResult ListWithOtherPagePost(string category, int page = 1)
+        //[HttpPost]
+        public ViewResult ListWithOtherPagePost( int page = 1)
         {
             var categories = repository.Products;
             List<string> categor = new List<string>();
@@ -48,13 +49,8 @@ namespace SportsStore.WebUI.Controllers
             {
                 categories = categories.Where(e => categor.Contains(e.Category));
             }
-            //var Products = repository.Products
-            //                                .Where(p => category == null || p.Category == category)
-            //                                .OrderBy(p => p.ProductID)
-            //                                .Skip((page - 1) * PageSize)
-            //                                .Take(PageSize);
             var data = new PageableData<Product>(categories.ToList(), page, 5);
-            return View(data);
+            return View( data);
         }
         //GET: Product
         public ViewResult List(string category, int page = 1)

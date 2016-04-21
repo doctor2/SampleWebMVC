@@ -10,7 +10,7 @@
 </div>
 <div class="pagination pagination-right">
     @*class="pager"*@
-@Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPage", new { page = x }))
+@Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost", new { page = x }))
 </div>
 @*<div class="pagination">
         @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("Index", new { page = x, searchString }))
