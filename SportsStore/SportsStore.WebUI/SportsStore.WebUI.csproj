@@ -150,6 +150,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AllHtml\css\fonts.css" />
+    <Content Include="AllHtml\css\main.css" />
+    <Content Include="AllHtml\css\mainmy.css" />
+    <Content Include="AllHtml\css\media.css" />
+    <Content Include="AllHtml\img\ds.jpg" />
+    <Content Include="AllHtml\img\mo.jpg" />
+    <Content Include="AllHtml\indexMy.html" />
+    <Content Include="AllHtml\js\common.js" />
+    <Content Include="AllHtml\libs\bootstrap\bootstrap-grid-3.3.1.min.css" />
+    <Content Include="AllHtml\libs\countdown\jquery.countdown-ru.js" />
+    <Content Include="AllHtml\libs\countdown\jquery.countdown.css" />
+    <Content Include="AllHtml\libs\countdown\jquery.countdown.min.js" />
+    <Content Include="AllHtml\libs\countdown\jquery.plugin.js" />
+    <Content Include="AllHtml\libs\fancybox\blank.gif" />
+    <Content Include="AllHtml\libs\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="AllHtml\libs\fancybox\fancybox_loading.gif" />
+    <Content Include="AllHtml\libs\fancybox\fancybox_overlay.png" />
+    <Content Include="AllHtml\libs\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="AllHtml\libs\fancybox\fancybox_sprite.png" />
+    <Content Include="AllHtml\libs\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="AllHtml\libs\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="AllHtml\libs\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="AllHtml\libs\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="AllHtml\libs\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="AllHtml\libs\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="AllHtml\libs\fancybox\jquery.fancybox.css" />
+    <Content Include="AllHtml\libs\fancybox\jquery.fancybox.js" />
+    <Content Include="AllHtml\libs\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="AllHtml\libs\html5shiv\es5-shim.min.js" />
+    <Content Include="AllHtml\libs\html5shiv\html5shiv-printshiv.min.js" />
+    <Content Include="AllHtml\libs\html5shiv\html5shiv.min.js" />
+    <Content Include="AllHtml\libs\html5shiv\respond.min.js" />
+    <Content Include="AllHtml\libs\jquery-mousewheel\jquery.mousewheel.min.js" />
+    <Content Include="AllHtml\libs\jquery\jquery-1.11.1.min.js" />
+    <Content Include="AllHtml\libs\landing-nav\navigation.js" />
+    <Content Include="AllHtml\libs\owl-carousel\AjaxLoader.gif" />
+    <Content Include="AllHtml\libs\owl-carousel\grabbing.png" />
+    <Content Include="AllHtml\libs\owl-carousel\owl.carousel.css" />
+    <Content Include="AllHtml\libs\owl-carousel\owl.carousel.js" />
+    <Content Include="AllHtml\libs\owl-carousel\owl.carousel.min.js" />
+    <Content Include="AllHtml\libs\owl-carousel\owl.theme.css" />
+    <Content Include="AllHtml\libs\owl-carousel\owl.transitions.css" />
+    <Content Include="AllHtml\libs\respond\respond.min.js" />
+    <Content Include="AllHtml\libs\scrollto\jquery.scrollTo.min.js" />
+    <Content Include="AllHtml\libs\waypoints\waypoints-1.6.2.min.js" />
     <Content Include="Content\Admin.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -162,6 +209,35 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="AllHtml\fonts\NautilusPompiliusRegular\NautilusPompiliusRegular.eot" />
+    <Content Include="AllHtml\fonts\NautilusPompiliusRegular\NautilusPompiliusRegular.ttf" />
+    <Content Include="AllHtml\fonts\NautilusPompiliusRegular\NautilusPompiliusRegular.woff" />
+    <Content Include="AllHtml\fonts\RobotoBold\RobotoBold.eot" />
+    <Content Include="AllHtml\fonts\RobotoBold\RobotoBold.ttf" />
+    <Content Include="AllHtml\fonts\RobotoBold\RobotoBold.woff" />
+    <Content Include="AllHtml\fonts\RobotoCondensedBold\RobotoCondensedBold.eot" />
+    <Content Include="AllHtml\fonts\RobotoCondensedBold\RobotoCondensedBold.ttf" />
+    <Content Include="AllHtml\fonts\RobotoCondensedBold\RobotoCondensedBold.woff" />
+    <Content Include="AllHtml\fonts\RobotoCondensedLight\RobotoCondensedLight.eot" />
+    <Content Include="AllHtml\fonts\RobotoCondensedLight\RobotoCondensedLight.ttf" />
+    <Content Include="AllHtml\fonts\RobotoCondensedLight\RobotoCondensedLight.woff" />
+    <Content Include="AllHtml\fonts\RobotoCondensedRegular\RobotoCondensedRegular.eot" />
+    <Content Include="AllHtml\fonts\RobotoCondensedRegular\RobotoCondensedRegular.ttf" />
+    <Content Include="AllHtml\fonts\RobotoCondensedRegular\RobotoCondensedRegular.woff" />
+    <Content Include="AllHtml\fonts\RobotoLight\RobotoLight.eot" />
+    <Content Include="AllHtml\fonts\RobotoLight\RobotoLight.ttf" />
+    <Content Include="AllHtml\fonts\RobotoLight\RobotoLight.woff" />
+    <Content Include="AllHtml\fonts\RobotoMedium\RobotoMedium.eot" />
+    <Content Include="AllHtml\fonts\RobotoMedium\RobotoMedium.ttf" />
+    <Content Include="AllHtml\fonts\RobotoMedium\RobotoMedium.woff" />
+    <Content Include="AllHtml\fonts\RobotoRegular\RobotoRegular.eot" />
+    <Content Include="AllHtml\fonts\RobotoRegular\RobotoRegular.ttf" />
+    <Content Include="AllHtml\fonts\RobotoRegular\RobotoRegular.woff" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="AllHtml\libs\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="AllHtml\mail.php" />
     <None Include="Properties\PublishProfiles\ProfileSport.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -236,7 +312,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AllHtml\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
