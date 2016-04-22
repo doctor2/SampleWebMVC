@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -30,11 +31,13 @@ namespace SportsStore.WebUI.Controllers
             var data = new PageableData<Product>(repository.Products.ToList(), page, 5);
             return View(data);
         }
-        //[HttpPost]
-        public ViewResult ListWithOtherPagePost( int page = 1)
+        [HttpPost]
+        public ViewResult ListWithOtherPagePost( )
         {
+            int page = 1;
             var categories = repository.Products;
             List<string> categor = new List<string>();
+            string filter = string.Empty;
             foreach (var categ in repository.Products
                 .Select(x => x.Category)
                 .Distinct()
@@ -43,14 +46,42 @@ namespace SportsStore.WebUI.Controllers
                 if (Request.Form[categ] != null && Request.Form[categ] == "true,false")
                 {
                     categor.Add(categ);
+                    filter += categ + "_or_";
                 }
             }
+            ViewBag.FilterDiscr = filter.Remove(filter.Length-4);
             if (categor.Count > 0)
             {
                 categories = categories.Where(e => categor.Contains(e.Category));
             }
             var data = new PageableData<Product>(categories.ToList(), page, 5);
             return View( data);
+        }
+        public ViewResult ListWithOtherPagePost(string filterDiscr,int page = 1)
+        {
+            var categories = repository.Products;
+            List<string> categor = new List<string>();
+            foreach (var word in Regex.Split(filterDiscr,"_or_"))
+            {
+                categor.Add(word);
+            }
+            ViewBag.FilterDiscr = filterDiscr;
+            //foreach (var categ in repository.Products
+            //    .Select(x => x.Category)
+            //    .Distinct()
+            //    .OrderBy(x => x))
+            //{
+            //    if (Request.Form[categ] != null && Request.Form[categ] == "true,false")
+            //    {
+            //        categor.Add(categ);
+            //    }
+            //}
+            if (categor.Count > 0)
+            {
+                categories = categories.Where(e => categor.Contains(e.Category));
+            }
+            var data = new PageableData<Product>(categories.ToList(), page, 5);
+            return View(data);
         }
         //GET: Product
         public ViewResult List(string category, int page = 1)

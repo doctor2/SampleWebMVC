@@ -22,15 +22,46 @@ namespace SportsStore.WebUI.Controllers
             .Select(x => x.Category)
             .Distinct()
             .OrderBy(x => x);
+            foreach (var item in categories)
+            {
+                ViewBag[item] = false;
+            }
             return PartialView(categories);
         }
-        public PartialViewResult MenuWithCheckbox(string[] category = null)
+        //[HttpGet]
+        public PartialViewResult MenuWithCheckbox()
         {
             IEnumerable<string> categories = repository.Products
             .Select(x => x.Category)
             .Distinct()
             .OrderBy(x => x);
+            // var categories = repository.Products
+            //.Select(x => x.Category)
+            //.Distinct()
+            //.OrderBy(x => x).ToList()
+            //.Select(x => Tuple.Create(x, false));
+            //Request.QueryString["ReturnUrl"] = "Get";
             return PartialView(categories);
         }
+        //[HttpPost]
+        //public PartialViewResult MenuWithCheckbox()// IEnumerable<Tuple<string, bool>> categ
+        //{
+        //   // IEnumerable<string> categories = repository.Products
+        //   // .Select(x => x.Category)
+        //   // .Distinct()
+        //   // .OrderBy(x => x);
+        //   // categ = repository.Products
+        //   //.Select(x => x.Category)
+        //   //.Distinct()
+        //   //.OrderBy(x => x)
+        //   //.Select(x =>Tuple.Create(x, false)) ;
+        //    //Request.QueryString["ReturnUrl"] = "Post";
+        //    //foreach (var item in categories)
+        //    //{
+        //    //    ViewBag[item] = (Request.Form[item] ?? string.Empty).Contains("true");
+        //    //}
+        //    return PartialView(categ);
+        //    //return PartialView(categories);
+        //}
     }
 }

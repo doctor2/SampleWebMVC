@@ -14,16 +14,18 @@ namespace SportsStore.WebUI
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+               name: "ShopFilter",
+               url: "{ controller}/{ action}/Filter/{filterDiscr}/{page}"//, defaults: new { controller = "Product", action = "ListWithOtherPage", FilterDiscr = 0, page = 1 }
+               , defaults: new
+               { controller = "Product", action = "ListWithOtherPagePost", page = UrlParameter.Optional }
+               );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{page}",
                 defaults: new { controller = "Product", action = "ListWithOtherPage", page = UrlParameter.Optional });
 
-            routes.MapRoute(
-                name: "ShopFilter",
-                url:"{ controller}/{ action}/Filter/{FilterDiscr}/{page}"//, defaults: new { controller = "Product", action = "ListWithOtherPage", FilterDiscr = 0, page = 1 }
-                , defaults: new
-                { controller = "Product", action = "ListWithOtherPagePost", page = UrlParameter.Optional }
-                );  
+           
 
             //routes.MapRoute("Default", "{controller}/{action}",
             //    new { controller = "Product", action = "ListWithOtherPage" });

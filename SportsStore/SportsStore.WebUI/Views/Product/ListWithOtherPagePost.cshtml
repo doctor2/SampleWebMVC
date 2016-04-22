@@ -8,9 +8,13 @@
         Html.RenderPartial("ProductSummary", p);
     }
 </div>
+@*<div class="pagination pagination-right">
+@Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost", new { page = x }))
+</div>*@
+<h1>@ViewBag.FilterDiscr</h1>
 <div class="pagination pagination-right">
     @*class="pager"*@
-@Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost", new { page = x }))
+    @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost/Filter/"+  ViewBag.FilterDiscr, new {  page = x }))
 </div>
 @*<div class="pagination">
         @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("Index", new { page = x, searchString }))
