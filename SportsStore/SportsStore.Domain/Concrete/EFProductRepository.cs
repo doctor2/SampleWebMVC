@@ -26,9 +26,11 @@ namespace SportsStore.Domain.Concrete
                 Product dbEntry = context.Products.Find(product.ProductID);
                 if (dbEntry != null)
                 {
+                    dbEntry.NameUrl = product.NameUrl;
                     dbEntry.Name = product.Name;
                     dbEntry.Description = product.Description;
                     dbEntry.Price = product.Price;
+                    dbEntry.CategoryUrl = product.CategoryUrl;
                     dbEntry.Category = product.Category;
                     dbEntry.ImageData = product.ImageData;
                     dbEntry.ImageMimeType = product.ImageMimeType;

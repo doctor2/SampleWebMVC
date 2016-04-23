@@ -19,7 +19,10 @@ namespace SportsStore.WebUI
                , defaults: new
                { controller = "Product", action = "ListWithOtherPagePost", page = UrlParameter.Optional }
                );
-
+            routes.MapRoute(
+               name: "Navigation",
+               url: "catalog/{category}/{page}", //{controller}/{action}/
+               defaults: new { controller = "Product", action = "List", page = UrlParameter.Optional });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{page}",

@@ -68,6 +68,17 @@ DIV.item H4
 font-size: 1.1em;
 margin: .4em 0 0 0;
 }
+/*DIV .pagination {
+    list-style: none;
+}
+DIV .pagination li
+{
+    display:inline-block;
+}
+DIV .pagination a
+{
+   text-align: right;
+}*/
 DIV.pager
 {
 text-align: right;
@@ -96,6 +107,7 @@ DIV#categories A
 font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block;
 text-decoration: none; padding: .6em; color: Black;
 border-bottom: 1px solid silver;
+width:200px;
 }
 DIV#categories A.selected { background-color: #666; color: White; }
 DIV#categories A:hover { background-color: #CCC; }

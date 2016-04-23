@@ -1,71 +1,183 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
-    <script src="~/Scripts/Product/scroll.js"></script>
+    @*<link href="~/Content/Site.css" type="text/css" rel="stylesheet" />*@
+    @*@Styles.Render("~/Content/css/jqueryui")*@
+    @Styles.Render("~/Content/css")
+    @*@RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/Product/scroll.js"></script>*@
 </head>
 <body>
-    <div id="header">
-        @{Html.RenderAction("Summary", "Cart");}
-        <div class="title">SPORTS STORE</div>
-    </div>
-    <div id="categories">
-       @{ Html.RenderAction("Menu", "Nav"); }
-    </div>
-    <div id="content">
-        @RenderBody()
-
-        @*<div id="topcontrol" title="Вверх" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;">
-        <img src="http://paranormal-news.ru/up1.png" style="width:54px; height:36px">
-        </div>*@
-
-    </div>
-
-   
-    @*@Scripts.Render("~/bundles/common")*@
-</body>
-</html>
-
-@*<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+    <header class="top_header">
+        <div class="header_topline">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="adress">
+                            г.Тюмень
+                        </div>
+                        <div class="top_links">
+                            @Html.ActionLink("Вход в личный кабинет", "Login", "Account")
+                            @*<a href="#">
+                                Вход в личный кабинет
+                            </a>*@
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="logo_search">
+                        @Html.ActionLink("Sport Shop", "ListWithOtherPage", "Product", null, new { @class = "logo" })
+                        @*<a href="#" class="logo">My Shop</a>*@
+                         
+                        @{Html.RenderAction("Summary", "Cart");}
+                        <div class="search">
+                            <div class="search_text">
+                                <input name="name" placeholder="Поиск..." required="" type="text">
+                            </div>
+                            <div class="search_button">
+                                <button class="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
 
-    <div class="container body-content">
+                    </div>
+                    <nav class="main_menu clearfix">
+                        <button class="main_menu_button hidden-md hidden-lg "><i class="fa fa-bars"></i></button>
+                        <ul>
+                            @{Html.RenderAction("Menu", "Nav"); }
+                            @*<li><a href="#">Спорт</a></li>
+                            <li><a href="#">Отдых</a></li>
+                            <li><a href="#">Работа</a></li>
+                            <li><a href="#">Инвентарь</a></li>*@
+                        </ul>
+                        <div class="top_contacts"><i class="fa fa-mobile"></i> 8-800-2000-100</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+       @* @{Html.RenderAction("Summary", "Cart");}*@
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="coll-md-6"></div>
+                <div class="coll-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="container">
+            <div class="row">
+                <h1>Процессор</h1>
+                <div class="col-md-3">
+                    <div class="left_filter">
+                        <aside class="left_aside">
+                            @{ Html.RenderAction("MenuWithCheckbox", "Nav"); }
+                            @*<ul>
+
+                                <li><input type="checkbox"></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                                <li><a href="#">lorem4</a></li>
+                            </ul>*@
+                        </aside>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="content_text">
+                        @RenderBody()
+                        @*<div class="blog_item">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-4">
+                                        <a href="//webdesign-master.ru" target="_blank"><img src="img/ds.jpg" alt="alt"></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis quaerat, dolor mollitia, vitae nemo quam doloribus harum, consequuntur, voluptate eius. Reprehenderit, error officiis animi debitis quis. Fuga, fugiat, voluptatem?</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_item">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-4">
+                                        <a href="//webdesign-master.ru" target="_blank"><img src="img/ds.jpg" alt="alt"></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis quaerat, dolor mollitia, vitae nemo quam doloribus harum, consequuntur, voluptate eius. Reprehenderit, error officiis animi debitis quis. Fuga, fugiat, voluptatem?</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="down_footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_text">
+                    <div class="col-md-9">
+                        <div class="footer_table">
+                            <ul>
+                                <li>
+                                    О компании
+                                </li>
+                                <li>
+                                    Сервисы
+
+                                </li>
+                                <li>
+                                    Инструкции
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prav">
+            © 2011—2016 My Shop электронный дискаунтер. Все права защищены.
+            Информация на сайте не является публичной офертой.
+        </div>
+    </footer>
+    @*<div id="categories">
+        @{ Html.RenderAction("MenuWithCheckbox", "Nav"); }
+    </div>*@
+    @*<div id="content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+        <div id="topcontrol" title="Вверх" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;">
+        <img src="http://paranormal-news.ru/up1.png" style="width:54px; height:36px">
+        </div>
+
+    </div>*@
+
+    @Scripts.Render("~/AllHtml")
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/common")*@
+    @*@RenderSection("scripts", required: false)*@
 </body>
-</html>*@
+</html>

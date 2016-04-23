@@ -197,6 +197,14 @@
     <Content Include="AllHtml\libs\respond\respond.min.js" />
     <Content Include="AllHtml\libs\scrollto\jquery.scrollTo.min.js" />
     <Content Include="AllHtml\libs\waypoints\waypoints-1.6.2.min.js" />
+    <Content Include="App_Data\EFDbContext.mdf" />
+    <Content Include="App_Data\EFDbContext_log.ldf">
+      <DependentUpon>EFDbContext.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ProductDb.mdf" />
+    <Content Include="App_Data\ProductDb_log.ldf">
+      <DependentUpon>ProductDb.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Admin.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -311,9 +319,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
       <Project>{a988a066-f0e0-4993-bcb1-cd326e97843b}</Project>

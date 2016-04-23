@@ -9,8 +9,251 @@
     <_PublishTargetUrl>C:\inetpub\wwwroot\SportsStore</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="AllHtml/css/fonts.css">
+      <publishTime>12/13/2014 18:48:43</publishTime>
+    </File>
+    <File Include="AllHtml/css/main.css">
+      <publishTime>04/21/2016 22:48:32</publishTime>
+    </File>
+    <File Include="AllHtml/css/mainmy.css">
+      <publishTime>04/22/2016 23:17:26</publishTime>
+    </File>
+    <File Include="AllHtml/css/media.css">
+      <publishTime>04/22/2016 14:56:51</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot">
+      <publishTime>12/13/2014 18:48:43</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf">
+      <publishTime>12/13/2014 18:48:44</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff">
+      <publishTime>12/13/2014 18:48:44</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoBold/RobotoBold.eot">
+      <publishTime>12/13/2014 18:48:47</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoBold/RobotoBold.ttf">
+      <publishTime>12/13/2014 18:48:44</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoBold/RobotoBold.woff">
+      <publishTime>12/13/2014 18:48:43</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedBold/RobotoCondensedBold.eot">
+      <publishTime>12/13/2014 18:48:46</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedBold/RobotoCondensedBold.ttf">
+      <publishTime>12/13/2014 18:48:46</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedBold/RobotoCondensedBold.woff">
+      <publishTime>12/13/2014 18:48:45</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedLight/RobotoCondensedLight.eot">
+      <publishTime>12/13/2014 18:48:46</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedLight/RobotoCondensedLight.ttf">
+      <publishTime>12/13/2014 18:48:45</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedLight/RobotoCondensedLight.woff">
+      <publishTime>12/13/2014 18:48:45</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot">
+      <publishTime>12/13/2014 18:48:47</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf">
+      <publishTime>12/13/2014 18:48:46</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff">
+      <publishTime>12/13/2014 18:48:46</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoLight/RobotoLight.eot">
+      <publishTime>12/13/2014 18:48:47</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoLight/RobotoLight.ttf">
+      <publishTime>12/13/2014 18:48:48</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoLight/RobotoLight.woff">
+      <publishTime>12/13/2014 18:48:47</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoMedium/RobotoMedium.eot">
+      <publishTime>12/13/2014 18:48:48</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoMedium/RobotoMedium.ttf">
+      <publishTime>12/13/2014 18:48:48</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoMedium/RobotoMedium.woff">
+      <publishTime>12/13/2014 18:48:47</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoRegular/RobotoRegular.eot">
+      <publishTime>12/13/2014 18:48:49</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoRegular/RobotoRegular.ttf">
+      <publishTime>12/13/2014 18:48:49</publishTime>
+    </File>
+    <File Include="AllHtml/fonts/RobotoRegular/RobotoRegular.woff">
+      <publishTime>12/13/2014 18:48:48</publishTime>
+    </File>
+    <File Include="AllHtml/img/ds.jpg">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/img/mo.jpg">
+      <publishTime>12/13/2014 18:48:58</publishTime>
+    </File>
+    <File Include="AllHtml/indexMy.html">
+      <publishTime>04/22/2016 16:49:08</publishTime>
+    </File>
+    <File Include="AllHtml/js/common.js">
+      <publishTime>04/22/2016 10:13:05</publishTime>
+    </File>
+    <File Include="AllHtml/libs/bootstrap/bootstrap-grid-3.3.1.min.css">
+      <publishTime>12/13/2014 18:48:49</publishTime>
+    </File>
+    <File Include="AllHtml/libs/countdown/jquery.countdown-ru.js">
+      <publishTime>12/13/2014 18:48:50</publishTime>
+    </File>
+    <File Include="AllHtml/libs/countdown/jquery.countdown.css">
+      <publishTime>12/13/2014 18:48:50</publishTime>
+    </File>
+    <File Include="AllHtml/libs/countdown/jquery.countdown.min.js">
+      <publishTime>12/13/2014 18:48:49</publishTime>
+    </File>
+    <File Include="AllHtml/libs/countdown/jquery.plugin.js">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/blank.gif">
+      <publishTime>12/13/2014 18:48:52</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/fancybox_loading%402x.gif">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/fancybox_loading.gif">
+      <publishTime>12/13/2014 18:48:52</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/fancybox_overlay.png">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/fancybox_sprite%402x.png">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/fancybox_sprite.png">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/fancybox_buttons.png">
+      <publishTime>12/13/2014 18:48:53</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/jquery.fancybox-buttons.css">
+      <publishTime>12/13/2014 18:48:52</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/jquery.fancybox-buttons.js">
+      <publishTime>12/13/2014 18:48:53</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/jquery.fancybox-media.js">
+      <publishTime>12/13/2014 18:48:53</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/jquery.fancybox-thumbs.css">
+      <publishTime>12/13/2014 18:48:52</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/helpers/jquery.fancybox-thumbs.js">
+      <publishTime>12/13/2014 18:48:52</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/jquery.fancybox.css">
+      <publishTime>12/13/2014 18:48:50</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/jquery.fancybox.js">
+      <publishTime>12/13/2014 18:48:51</publishTime>
+    </File>
+    <File Include="AllHtml/libs/fancybox/jquery.fancybox.pack.js">
+      <publishTime>12/13/2014 18:48:50</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/css/font-awesome.min.css">
+      <publishTime>12/13/2014 18:48:54</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/fonts/fontawesome-webfont.eot">
+      <publishTime>12/13/2014 18:48:55</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/fonts/fontawesome-webfont.svg">
+      <publishTime>12/13/2014 18:49:01</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/13/2014 18:48:56</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/fonts/fontawesome-webfont.woff">
+      <publishTime>12/13/2014 18:48:55</publishTime>
+    </File>
+    <File Include="AllHtml/libs/font-awesome-4.2.0/fonts/FontAwesome.otf">
+      <publishTime>12/13/2014 18:48:57</publishTime>
+    </File>
+    <File Include="AllHtml/libs/html5shiv/es5-shim.min.js">
+      <publishTime>12/13/2014 18:48:57</publishTime>
+    </File>
+    <File Include="AllHtml/libs/html5shiv/html5shiv-printshiv.min.js">
+      <publishTime>12/13/2014 18:48:56</publishTime>
+    </File>
+    <File Include="AllHtml/libs/html5shiv/html5shiv.min.js">
+      <publishTime>12/13/2014 18:48:55</publishTime>
+    </File>
+    <File Include="AllHtml/libs/html5shiv/respond.min.js">
+      <publishTime>12/13/2014 18:48:55</publishTime>
+    </File>
+    <File Include="AllHtml/libs/jquery-mousewheel/jquery.mousewheel.min.js">
+      <publishTime>12/13/2014 18:48:58</publishTime>
+    </File>
+    <File Include="AllHtml/libs/jquery/jquery-1.11.1.min.js">
+      <publishTime>12/13/2014 18:49:00</publishTime>
+    </File>
+    <File Include="AllHtml/libs/landing-nav/navigation.js">
+      <publishTime>12/13/2014 18:48:58</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/AjaxLoader.gif">
+      <publishTime>12/13/2014 18:49:02</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/grabbing.png">
+      <publishTime>12/13/2014 18:49:02</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/owl.carousel.css">
+      <publishTime>12/13/2014 18:49:02</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/owl.carousel.js">
+      <publishTime>12/13/2014 18:49:01</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/owl.carousel.min.js">
+      <publishTime>12/13/2014 18:49:00</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/owl.theme.css">
+      <publishTime>12/13/2014 18:49:01</publishTime>
+    </File>
+    <File Include="AllHtml/libs/owl-carousel/owl.transitions.css">
+      <publishTime>12/13/2014 18:49:00</publishTime>
+    </File>
+    <File Include="AllHtml/libs/respond/respond.min.js">
+      <publishTime>12/13/2014 18:49:02</publishTime>
+    </File>
+    <File Include="AllHtml/libs/scrollto/jquery.scrollTo.min.js">
+      <publishTime>12/13/2014 18:49:02</publishTime>
+    </File>
+    <File Include="AllHtml/libs/waypoints/waypoints-1.6.2.min.js">
+      <publishTime>12/13/2014 18:49:03</publishTime>
+    </File>
+    <File Include="AllHtml/mail.php">
+      <publishTime>12/13/2014 18:48:43</publishTime>
+    </File>
     <File Include="ApplicationInsights.config">
       <publishTime>03/28/2016 14:52:26</publishTime>
+    </File>
+    <File Include="App_Data/EFDbContext.mdf">
+      <publishTime>04/23/2016 08:53:34</publishTime>
+    </File>
+    <File Include="App_Data/EFDbContext_log.ldf">
+      <publishTime>04/23/2016 08:53:34</publishTime>
+    </File>
+    <File Include="App_Data/ProductDb.mdf">
+      <publishTime>04/23/2016 09:44:11</publishTime>
+    </File>
+    <File Include="App_Data/ProductDb_log.ldf">
+      <publishTime>04/23/2016 09:44:11</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>03/28/2016 14:48:58</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>03/28/2016 14:52:26</publishTime>
@@ -50,6 +293,9 @@
     </File>
     <File Include="bin/Moq.dll">
       <publishTime>03/28/2016 15:16:09</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/20/2016 08:41:07</publishTime>
     </File>
     <File Include="bin/Ninject.dll">
       <publishTime>03/28/2016 15:15:52</publishTime>
@@ -106,16 +352,19 @@
       <publishTime>03/28/2016 15:15:47</publishTime>
     </File>
     <File Include="bin/SportsStore.Domain.dll">
-      <publishTime>04/10/2016 14:02:47</publishTime>
+      <publishTime>04/23/2016 09:44:39</publishTime>
     </File>
     <File Include="bin/SportsStore.WebUI.dll">
-      <publishTime>04/10/2016 14:44:48</publishTime>
+      <publishTime>04/23/2016 09:44:43</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>03/28/2016 14:47:18</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
       <publishTime>03/20/2016 12:51:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>03/28/2016 14:48:58</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>03/28/2016 14:47:18</publishTime>
@@ -129,6 +378,12 @@
     <File Include="bin/System.Web.Webpages.Razor.dll">
       <publishTime>03/28/2016 14:47:18</publishTime>
     </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>03/28/2016 14:48:58</publishTime>
+    </File>
+    <File Include="ClassDiagram1.cd">
+      <publishTime>04/11/2016 10:14:06</publishTime>
+    </File>
     <File Include="Content/Admin.css">
       <publishTime>03/30/2016 13:51:20</publishTime>
     </File>
@@ -139,7 +394,7 @@
       <publishTime>03/28/2016 16:36:11</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>03/30/2016 08:35:27</publishTime>
+      <publishTime>04/20/2016 21:34:24</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>03/28/2016 16:36:11</publishTime>
@@ -157,7 +412,7 @@
       <publishTime>03/28/2016 14:52:21</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>03/29/2016 16:39:25</publishTime>
+      <publishTime>04/20/2016 08:41:09</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
       <publishTime>03/28/2016 14:52:26</publishTime>
@@ -217,22 +472,31 @@
       <publishTime>03/30/2016 08:42:58</publishTime>
     </File>
     <File Include="Views/Cart/Summary.cshtml">
-      <publishTime>03/30/2016 08:33:52</publishTime>
+      <publishTime>04/22/2016 23:18:06</publishTime>
     </File>
     <File Include="Views/Nav/Menu.cshtml">
-      <publishTime>03/29/2016 13:39:06</publishTime>
+      <publishTime>04/23/2016 09:33:30</publishTime>
+    </File>
+    <File Include="Views/Nav/MenuWithCheckbox.cshtml">
+      <publishTime>04/22/2016 15:19:31</publishTime>
     </File>
     <File Include="Views/Product/List.cshtml">
-      <publishTime>04/10/2016 08:31:29</publishTime>
+      <publishTime>04/17/2016 20:20:04</publishTime>
+    </File>
+    <File Include="Views/Product/ListWithOtherPage.cshtml">
+      <publishTime>04/20/2016 14:06:43</publishTime>
+    </File>
+    <File Include="Views/Product/ListWithOtherPagePost.cshtml">
+      <publishTime>04/21/2016 11:14:23</publishTime>
     </File>
     <File Include="Views/Shared/ProductSummary.cshtml">
-      <publishTime>04/10/2016 08:32:21</publishTime>
+      <publishTime>04/20/2016 08:55:32</publishTime>
     </File>
     <File Include="Views/Shared/_AdminLayout.cshtml">
       <publishTime>03/30/2016 16:03:22</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/10/2016 08:34:52</publishTime>
+      <publishTime>04/22/2016 23:40:42</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>03/29/2016 16:36:29</publishTime>
@@ -241,7 +505,7 @@
       <publishTime>03/28/2016 16:36:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/10/2016 14:44:48</publishTime>
+      <publishTime>04/23/2016 09:44:43</publishTime>
     </File>
   </ItemGroup>
 </Project>

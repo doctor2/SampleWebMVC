@@ -22,7 +22,7 @@
                             г.Тюмень
                         </div>
                         <div class="top_links">
-                            @Html.ActionLink("Вход в личный кабинет",   "Login", "Account")
+                            @Html.ActionLink("Вход в личный кабинет", "Login", "Account")
                             @*<a href="#">
                                 Вход в личный кабинет
                             </a>*@
@@ -35,9 +35,10 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="logo_search">
-                        <a href="#" class="logo">My Shop</a>
-                         @{Html.RenderAction("Summary", "Cart");}
-
+                        @Html.ActionLink("Sport Shop", "ListWithOtherPage", "Product", null, new { @class = "logo" })
+                        @*<a href="#" class="logo">My Shop</a>*@
+                         
+                        @{Html.RenderAction("Summary", "Cart");}
                         <div class="search">
                             <div class="search_text">
                                 <input name="name" placeholder="Поиск..." required="" type="text">
@@ -51,10 +52,11 @@
                     <nav class="main_menu clearfix">
                         <button class="main_menu_button hidden-md hidden-lg "><i class="fa fa-bars"></i></button>
                         <ul>
-                            <li><a href="#">Спорт</a></li>
+                            @{Html.RenderAction("Menu", "Nav"); }
+                            @*<li><a href="#">Спорт</a></li>
                             <li><a href="#">Отдых</a></li>
                             <li><a href="#">Работа</a></li>
-                            <li><a href="#">Инвентарь</a></li>
+                            <li><a href="#">Инвентарь</a></li>*@
                         </ul>
                         <div class="top_contacts"><i class="fa fa-mobile"></i> 8-800-2000-100</div>
                     </nav>

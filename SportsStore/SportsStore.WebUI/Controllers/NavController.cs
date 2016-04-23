@@ -18,14 +18,22 @@ namespace SportsStore.WebUI.Controllers
         public PartialViewResult Menu(string category = null)
         {
             ViewBag.SelectedCategory = category;
-            IEnumerable<string> categories = repository.Products
-            .Select(x => x.Category)
+            var categories = repository.Products //Tuple<string,string>
+                .ToList()
+            .Select(x => Tuple.Create(x.CategoryUrl.ToString(), x.Category.ToString()))
             .Distinct()
-            .OrderBy(x => x);
-            foreach (var item in categories)
-            {
-                ViewBag[item] = false;
-            }
+            .OrderBy(x => x.Item1);
+            //.ToLookup(
+            //            cg => cg.Item1,
+            //            cg => cg.Item2);
+            //IEnumerable<string> categories = repository.Products
+            //.Select(x => x.CategoryUrl)
+            //.Distinct()
+            //.OrderBy(x => x);
+            //foreach (var item in categories)
+            //{
+            //    ViewBag[item] = false;
+            //}
             return PartialView(categories);
         }
         //[HttpGet]
