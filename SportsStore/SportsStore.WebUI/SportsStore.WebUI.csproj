@@ -311,7 +311,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Nav\MenuWithCheckbox.cshtml" />
     <Content Include="Views\Product\ListWithOtherPage.cshtml" />
-    <Content Include="Views\Product\ListWithOtherPagePost.cshtml" />
+    <Content Include="Views\Product\ListWithFilter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

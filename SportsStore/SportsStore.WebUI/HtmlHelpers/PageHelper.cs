@@ -77,7 +77,7 @@ namespace SportsStore.WebUI.HtmlHelpers
                 nextBuilder.MergeAttribute("href", pageUrl.Invoke(currentPage + 1));
                 builder.AppendLine("<li>" + nextBuilder.ToString() + "</li>");
             }
-            return new MvcHtmlString("<ul class = \"pagination pagination-right\">" + builder.ToString() + "</ul>");
+            return new MvcHtmlString("<ul >" + builder.ToString() + "</ul>");
         }
     }
 }

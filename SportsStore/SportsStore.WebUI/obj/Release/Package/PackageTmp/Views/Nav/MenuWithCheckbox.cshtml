@@ -1,39 +1,26 @@
-﻿@model IEnumerable<string>
+﻿@model IOrderedEnumerable<Tuple<string, string>>
 
-@*@model IEnumerable<Tuple<string,bool>>*@
-@*@Html.ActionLink("Home", "List", "Product")
-@foreach (var link in Model)
-{
-    @Html.RouteLink(link, new
-{
-    controller = "Product",
-    action = "List",
-    category = link,
-    page = 1
-},
-new
-{
-    @class = link == ViewBag.SelectedCategory ? "selected" : null
-})
-}*@
-<button class="btn btn-info" data-toggle="collapse" data-target="#hide-me">Выбор категории</button>
+<button class="button_filter" data-toggle="collapse" data-target="#hide-me">Выбор категории</button>
 <div id="hide-me" class="collapse in">
-   @using (Html.BeginForm("ListWithOtherPagePost", "Product"))
+   @using (Html.BeginForm("ToListPost", "Product"))
    {
     <br />
        foreach (var item in Model)
        {
-        @Html.CheckBox(item, (Request.Form[item] ?? string.Empty).Contains("true")); //(bool)ViewBag[item]
-        @Html.DisplayFor(i => item);
-        <br />
+        <span class="aside_checkbox">
+            @Html.CheckBox(item.Item1, (bool)ViewData[item.Item1])
+            </span>
+            @Html.DisplayFor(i => item.Item2);
+            <br />
        }
-    @*foreach (var item in Model)
-        {
-         @Html.CheckBox(item.Item1, item.Item2); //(bool)ViewBag[item]
-         @Html.DisplayFor(i => item.Item1);
-         <br />
-        }*@
-    <input type="submit" value="Отправить" />
-   }
-</div>
+       //(Request.Form[item.Item1] ?? string.Empty).Contains("true")
+            @*foreach (var item in Model)
+                {
+                 @Html.CheckBox(item.Item1, item.Item2); //(bool)ViewBag[item]
+                 @Html.DisplayFor(i => item.Item1);
+                 <br />
+                }*@
+                <input type="submit" value="Отправить" />
+            }
+        </div>
 

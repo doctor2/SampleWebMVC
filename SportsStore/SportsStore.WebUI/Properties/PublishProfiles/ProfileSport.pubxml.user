@@ -16,7 +16,7 @@
       <publishTime>04/21/2016 22:48:32</publishTime>
     </File>
     <File Include="AllHtml/css/mainmy.css">
-      <publishTime>04/22/2016 23:17:26</publishTime>
+      <publishTime>04/24/2016 10:51:56</publishTime>
     </File>
     <File Include="AllHtml/css/media.css">
       <publishTime>04/22/2016 14:56:51</publishTime>
@@ -241,16 +241,16 @@
       <publishTime>03/28/2016 14:52:26</publishTime>
     </File>
     <File Include="App_Data/EFDbContext.mdf">
-      <publishTime>04/23/2016 08:53:34</publishTime>
+      <publishTime>04/23/2016 23:23:15</publishTime>
     </File>
     <File Include="App_Data/EFDbContext_log.ldf">
-      <publishTime>04/23/2016 08:53:34</publishTime>
+      <publishTime>04/23/2016 23:23:15</publishTime>
     </File>
     <File Include="App_Data/ProductDb.mdf">
-      <publishTime>04/23/2016 09:44:11</publishTime>
+      <publishTime>04/24/2016 12:45:06</publishTime>
     </File>
     <File Include="App_Data/ProductDb_log.ldf">
-      <publishTime>04/23/2016 09:44:11</publishTime>
+      <publishTime>04/24/2016 12:45:06</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>03/28/2016 14:48:58</publishTime>
@@ -355,7 +355,7 @@
       <publishTime>04/23/2016 09:44:39</publishTime>
     </File>
     <File Include="bin/SportsStore.WebUI.dll">
-      <publishTime>04/23/2016 09:44:43</publishTime>
+      <publishTime>04/24/2016 14:58:23</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>03/28/2016 14:47:18</publishTime>
@@ -475,28 +475,31 @@
       <publishTime>04/22/2016 23:18:06</publishTime>
     </File>
     <File Include="Views/Nav/Menu.cshtml">
-      <publishTime>04/23/2016 09:33:30</publishTime>
+      <publishTime>04/23/2016 20:41:05</publishTime>
     </File>
     <File Include="Views/Nav/MenuWithCheckbox.cshtml">
-      <publishTime>04/22/2016 15:19:31</publishTime>
+      <publishTime>04/24/2016 14:45:32</publishTime>
     </File>
     <File Include="Views/Product/List.cshtml">
       <publishTime>04/17/2016 20:20:04</publishTime>
     </File>
+    <File Include="Views/Product/ListWithFilter.cshtml">
+      <publishTime>04/24/2016 14:35:50</publishTime>
+    </File>
     <File Include="Views/Product/ListWithOtherPage.cshtml">
-      <publishTime>04/20/2016 14:06:43</publishTime>
+      <publishTime>04/24/2016 14:25:03</publishTime>
     </File>
     <File Include="Views/Product/ListWithOtherPagePost.cshtml">
       <publishTime>04/21/2016 11:14:23</publishTime>
     </File>
     <File Include="Views/Shared/ProductSummary.cshtml">
-      <publishTime>04/20/2016 08:55:32</publishTime>
+      <publishTime>04/24/2016 10:53:16</publishTime>
     </File>
     <File Include="Views/Shared/_AdminLayout.cshtml">
       <publishTime>03/30/2016 16:03:22</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/22/2016 23:40:42</publishTime>
+      <publishTime>04/23/2016 22:37:31</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>03/29/2016 16:36:29</publishTime>
@@ -505,7 +508,7 @@
       <publishTime>03/28/2016 16:36:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/23/2016 09:44:43</publishTime>
+      <publishTime>04/24/2016 14:58:23</publishTime>
     </File>
   </ItemGroup>
 </Project>

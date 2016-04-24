@@ -8,18 +8,19 @@
        foreach (var item in Model)
        {
         <span class="aside_checkbox">
-            @Html.CheckBox(item.Item1, (Request.Form[item.Item1] ?? string.Empty).Contains("true"))
+            @Html.CheckBox(item.Item1, (bool)ViewData[item.Item1])
             </span>
             @Html.DisplayFor(i => item.Item2);
             <br />
-            }
+       }
+       //(Request.Form[item.Item1] ?? string.Empty).Contains("true")
             @*foreach (var item in Model)
                 {
                  @Html.CheckBox(item.Item1, item.Item2); //(bool)ViewBag[item]
                  @Html.DisplayFor(i => item.Item1);
                  <br />
                 }*@
-            <input type="submit" value="Отправить" />
+                <input type="submit" value="Отправить" />
             }
         </div>
 

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -34,13 +35,24 @@ namespace SportsStore.WebUI.Controllers
             return PartialView(categories);
         }
         //[HttpGet]
-        public PartialViewResult MenuWithCheckbox()
+        public PartialViewResult MenuWithCheckbox(string filterDiscr = "")
         {
             var categories = repository.Products //Tuple<string,string>
                 .ToList()
             .Select(x => Tuple.Create(x.CategoryUrl.ToString(), x.Category.ToString()))
             .Distinct()
             .OrderBy(x => x.Item1);
+            foreach (var item in categories)
+            {
+                ViewData[item.Item1] = false;
+            }
+            if (filterDiscr != "")
+            {
+                foreach (var word in Regex.Split(filterDiscr, "_or_"))
+                {
+                    ViewData[word] = true;
+                }
+            }
             return PartialView(categories);
         }
         //[HttpPost]

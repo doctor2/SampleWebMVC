@@ -15,12 +15,12 @@ namespace SportsStore.WebUI.Controllers
     public class ProductController : Controller
     {
         private IProductRepository repository;
-        public int PageSize = 5;
+        public int PageSize = 3;
         public ProductController(IProductRepository productRepository)
         {
             this.repository = productRepository;
         }
-        [HttpPost]
+        //[HttpPost]
         public RedirectToRouteResult ToListPost()
         {
             var categories = repository.Products;
@@ -37,59 +37,33 @@ namespace SportsStore.WebUI.Controllers
                     filterDiscr += categ + "_or_";
                 }
             }
-            filterDiscr = filterDiscr.Remove(filterDiscr.Length - 4);
-            return RedirectToAction("ListWithOtherPagePost", new { filterDiscr });
+            if (filterDiscr!="")
+            {
+                filterDiscr = filterDiscr.Remove(filterDiscr.Length - 4);
+            }       
+            return RedirectToAction("ListWithFilter", new { filterDiscr });
         }
+
         [HttpGet]
         public ViewResult ListWithOtherPage( int page = 1)
         {
-            //var Products = repository.Products
-            //                                .Where(p => category == null || p.Category == category)
-            //                                .OrderBy(p => p.ProductID)
-            //                                .Skip((page - 1) * PageSize)
-            //                                .Take(PageSize);
-            var data = new PageableData<Product>(repository.Products.ToList(), page, 5);
+            var data = new PageableData<Product>(repository.Products.ToList(), page, PageSize);
             return View(data);
         }
-       // [HttpPost]
-        //public ViewResult ListWithOtherPagePost(string filterDiscr)
-        //{
-        //    int page = 1;
-        //    var categories = repository.Products;
-        //    List<string> categor = new List<string>();
-        //    string filter = string.Empty;
-        //    foreach (var categ in repository.Products
-        //        .Select(x => x.Category)
-        //        .Distinct()
-        //        .OrderBy(x => x))
-        //    {
-        //        if (Request.Form[categ] != null && Request.Form[categ] == "true,false")
-        //        {
-        //            categor.Add(categ);
-        //            filter += categ + "_or_";
-        //        }
-        //    }
-        //    ViewBag.FilterDiscr = filter.Remove(filter.Length-4);
-        //    if (categor.Count > 0)
-        //    {
-        //        categories = categories.Where(e => categor.Contains(e.Category));
-        //    }
-        //    var data = new PageableData<Product>(categories.ToList(), page, 5);
-        //    return View( data);
-        //}
-        public ViewResult ListWithOtherPagePost(string filterDiscr,int page = 1)
+
+        public ViewResult ListWithFilter(string filterDiscr = "",int page = 1)
         {
             var categories = repository.Products;
-            List<string> categor = new List<string>();
-            foreach (var word in Regex.Split(filterDiscr,"_or_"))
+            if (filterDiscr!="")
             {
-                categor.Add(word);
-            }
-            ViewBag.FilterDiscr = filterDiscr;
-            if (categor.Count > 0)
-            {
+                List<string> categor = new List<string>();
+                foreach (var word in Regex.Split(filterDiscr, "_or_"))
+                {
+                    categor.Add(word);
+                }
+                ViewBag.FilterDiscr = filterDiscr;
                 categories = categories.Where(e => categor.Contains(e.CategoryUrl));
-            }
+            }           
             var data = new PageableData<Product>(categories.ToList(), page, PageSize);
             return View(data);
         }
@@ -133,28 +107,5 @@ namespace SportsStore.WebUI.Controllers
                 return null;
             }
         }
-
-        //public ViewResult List(string[] category, int page = 1)
-        //{
-        //    ProductsListViewModel model = new ProductsListViewModel
-        //    {
-        //        Products = repository.Products
-        //                                    .Where(p => category == null || category.Contains(p.Category) )
-        //                                    .OrderBy(p => p.ProductID)
-        //                                    .Skip((page - 1) * PageSize)
-        //                                    .Take(PageSize),
-        //        PagingInfo = new PagingInfo
-        //        {
-        //            CurrentPage = page,
-        //            ItemsPerPage = PageSize,
-        //            //TotalItems = repository.Products.Count()
-        //            TotalItems = category == null ?
-        //                                repository.Products.Count() :
-        //                                repository.Products.Where(e => category.Contains(e.Category)).Count()
-        //        },
-        //        CurrentCategory = "Chess"
-        //    };
-        //    return View(model);
-        //}
     }
 }

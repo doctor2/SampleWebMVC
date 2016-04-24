@@ -39,7 +39,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="logo_search">
-                        @Html.ActionLink("Sport Shop", "ListWithOtherPage", "Product", null, new { @class = "logo" })
+                        @Html.ActionLink("Sport Shop", "ListWithOtherPage", "Product", new { page = 1}, new { @class = "logo" })
                         @*<a href="#" class="logo">My Shop</a>*@
                          
                         @{Html.RenderAction("Summary", "Cart");}

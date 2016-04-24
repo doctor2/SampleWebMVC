@@ -2,19 +2,17 @@
 @{
     ViewBag.Title = "Products";
 }
-<div class="item">
     @foreach (var p in Model.List)
     {
         Html.RenderPartial("ProductSummary", p);
     }
-</div>
 @*<div class="pagination pagination-right">
 @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost", new { page = x }))
 </div>*@
 <h1>@ViewBag.FilterDiscr</h1>
-<div class="pagination pagination-right">
+<div class="pagination">
     @*class="pager"*@
-    @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("ListWithOtherPagePost/Filter/"+  ViewBag.FilterDiscr, new {  page = x }))
+    @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.RouteUrl( new { filterDiscr = ViewBag.FilterDiscr, page = x }))
 </div>
 @*<div class="pagination">
         @Html.PageLinks(Model.PageNo, Model.CountPage, x => Url.Action("Index", new { page = x, searchString }))
