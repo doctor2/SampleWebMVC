@@ -3,8 +3,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    @*<meta name="viewport" content="width=device-width" />*@
     <title>@ViewBag.Title</title>
+    <meta name="description" content="Спортивный магазин" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<link rel="shortcut icon" href="favicon.png" />*@
     @*<link href="~/Content/Site.css" type="text/css" rel="stylesheet" />*@
     @*@Styles.Render("~/Content/css/jqueryui")*@
     @Styles.Render("~/Content/css")
@@ -53,10 +57,6 @@
                         <button class="main_menu_button hidden-md hidden-lg "><i class="fa fa-bars"></i></button>
                         <ul>
                             @{Html.RenderAction("Menu", "Nav"); }
-                            @*<li><a href="#">Спорт</a></li>
-                            <li><a href="#">Отдых</a></li>
-                            <li><a href="#">Работа</a></li>
-                            <li><a href="#">Инвентарь</a></li>*@
                         </ul>
                         <div class="top_contacts"><i class="fa fa-mobile"></i> 8-800-2000-100</div>
                     </nav>
@@ -81,49 +81,12 @@
                     <div class="left_filter">
                         <aside class="left_aside">
                             @{ Html.RenderAction("MenuWithCheckbox", "Nav"); }
-                            @*<ul>
-
-                                <li><input type="checkbox"></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                                <li><a href="#">lorem4</a></li>
-                            </ul>*@
                         </aside>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="content_text">
                         @RenderBody()
-                        @*<div class="blog_item">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="col-md-4">
-                                        <a href="//webdesign-master.ru" target="_blank"><img src="img/ds.jpg" alt="alt"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis quaerat, dolor mollitia, vitae nemo quam doloribus harum, consequuntur, voluptate eius. Reprehenderit, error officiis animi debitis quis. Fuga, fugiat, voluptatem?</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog_item">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="col-md-4">
-                                        <a href="//webdesign-master.ru" target="_blank"><img src="img/ds.jpg" alt="alt"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis quaerat, dolor mollitia, vitae nemo quam doloribus harum, consequuntur, voluptate eius. Reprehenderit, error officiis animi debitis quis. Fuga, fugiat, voluptatem?</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>*@
                     </div>
                 </div>
             </div>

@@ -23,9 +23,6 @@ namespace SportsStore.WebUI.Controllers
             .Select(x => Tuple.Create(x.CategoryUrl.ToString(), x.Category.ToString()))
             .Distinct()
             .OrderBy(x => x.Item1);
-            //.ToLookup(
-            //            cg => cg.Item1,
-            //            cg => cg.Item2);
             //IEnumerable<string> categories = repository.Products
             //.Select(x => x.CategoryUrl)
             //.Distinct()
@@ -39,16 +36,11 @@ namespace SportsStore.WebUI.Controllers
         //[HttpGet]
         public PartialViewResult MenuWithCheckbox()
         {
-            IEnumerable<string> categories = repository.Products
-            .Select(x => x.Category)
+            var categories = repository.Products //Tuple<string,string>
+                .ToList()
+            .Select(x => Tuple.Create(x.CategoryUrl.ToString(), x.Category.ToString()))
             .Distinct()
-            .OrderBy(x => x);
-            // var categories = repository.Products
-            //.Select(x => x.Category)
-            //.Distinct()
-            //.OrderBy(x => x).ToList()
-            //.Select(x => Tuple.Create(x, false));
-            //Request.QueryString["ReturnUrl"] = "Get";
+            .OrderBy(x => x.Item1);
             return PartialView(categories);
         }
         //[HttpPost]

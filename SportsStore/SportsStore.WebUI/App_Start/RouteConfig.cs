@@ -15,10 +15,16 @@ namespace SportsStore.WebUI
 
             routes.MapRoute(
                name: "ShopFilter",
-               url: "{ controller}/{ action}/Filter/{filterDiscr}/{page}"//, defaults: new { controller = "Product", action = "ListWithOtherPage", FilterDiscr = 0, page = 1 }
+               url: "filter/{filterDiscr}/{page}"//, defaults: new { controller = "Product", action = "ListWithOtherPage", FilterDiscr = 0, page = 1 }
                , defaults: new
                { controller = "Product", action = "ListWithOtherPagePost", page = UrlParameter.Optional }
                );
+            //routes.MapRoute(
+            //   name: "ShopFilter",
+            //   url: "{ controller}/{ action}/Filter/{filterDiscr}/{page}"//, defaults: new { controller = "Product", action = "ListWithOtherPage", FilterDiscr = 0, page = 1 }
+            //   , defaults: new
+            //   { controller = "Product", action = "ListWithOtherPagePost", page = UrlParameter.Optional }
+            //   );
             routes.MapRoute(
                name: "Navigation",
                url: "catalog/{category}/{page}", //{controller}/{action}/
