@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Products</title>
+    <meta name="description" content="Спортивный магазин" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    
+    <link href="C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\AllHtml/libs/bootstrap/bootstrap-grid-3.3.1.min.css" rel="stylesheet"/>
+    <link href="C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\AllHtml/libs/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/AllHtml/libs/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+    <link href="/AllHtml/libs/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+    <link href="C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\AllHtml\css/fonts.css" rel="stylesheet"/>
+    <link href="C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\AllHtml\css\mainmy.css" rel="stylesheet"/>
+    <link href="C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\AllHtml\css/media.css" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    <header class="top_header">
+        <div class="header_topline">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="adress">
+                            г.Тюмень
+                        </div>
+                        <div class="top_links">
+                            <a href="/Account/Login">Вход в личный кабинет</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="logo_search">
+                        <a class="logo" href="/1">Sport Shop</a>
+                        
+
+
+                        <div class="cart">
+                            <span class="caption">
+                                <b><i class="fa fa-shopping-cart"></i></b>
+                                0 ,
+                                0,00р.
+                            </span>
+                            <a href="/Cart/Index?returnUrl=%2F">Купить</a>
+
+                        </div>
+                        <div class="search">
+                            <div class="search_text">
+                                <input name="name" placeholder="Поиск..." required="" type="text">
+                            </div>
+                            <div class="search_button">
+                                <button class="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav class="main_menu clearfix">
+                        <button class="main_menu_button hidden-md hidden-lg "><i class="fa fa-bars"></i></button>
+                        <ul>
+
+                            <li>
+                                <a class="" href="/catalog/basketbol">Баскетбол</a>
+                            </li>
+                            <li>
+                                <a class="" href="/catalog/tennis">Теннис</a>
+                            </li>
+                            <li>
+                                <a class="" href="/catalog/velosport">Велоспорт</a>
+                            </li>
+
+                        </ul>
+                        <div class="top_contacts"><i class="fa fa-mobile"></i> 8-800-2000-100</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="coll-md-6"></div>
+                <div class="coll-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="container">
+            <div class="row">
+                <h1>Процессор</h1>
+                <div class="col-md-3">
+                    <div class="left_filter">
+                        <aside class="left_aside">
+                            <button class="button_filter" data-toggle="collapse" data-target="#hide-me">Выбор категории</button>
+                            <div id="hide-me" class="collapse in">
+                                <form action="/Product/ToListPost" method="post">    <br />
+                                    <span class="aside_checkbox">
+                                        <input data-val="true" data-val-required="Требуется поле Boolean." id="basketbol" name="basketbol" type="checkbox" value="true" /><input name="basketbol" type="hidden" value="false" />
+                                    </span>
+                                    Баскетбол            <br />
+                                    <span class="aside_checkbox">
+                                        <input data-val="true" data-val-required="Требуется поле Boolean." id="tennis" name="tennis" type="checkbox" value="true" /><input name="tennis" type="hidden" value="false" />
+                                    </span>
+                                    Теннис            <br />
+                                    <span class="aside_checkbox">
+                                        <input data-val="true" data-val-required="Требуется поле Boolean." id="velosport" name="velosport" type="checkbox" value="true" /><input name="velosport" type="hidden" value="false" />
+                                    </span>
+                                    Велоспорт            <br />
+                                    <input type="submit" value="Отправить" />
+                                </form>       
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+                    <div class="content_text">                        
+                        <div class="blog_item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class=" blog_item_img">
+                                        <img width="75" height="75" src="/Product/GetImage?ProductID=1" />
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                <div class="blog_item_desc">
+                                        <h3>Ракетка Donier SP-BALSA PRO</h3>
+                                        <p>
+                                            Профессиональная ракетка для настольного тенниса 6* (ITTF) класса OFF+.
+
+                                            Скорость 10/ Вращение 10/ Контроль 6
+
+                                            Основание: 5 слоев (лимба, береза, бальза, береза, лимба)
+
+                                            Накладки: Donier MAX ATTACK (ITTF), губка 2,2 мм
+
+                                            Ручка: анатомическая или конусная
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                
+                                    <div class="row">
+                                         <div class="cart_prise">
+
+                                            <form action="/Cart/AddToCart" method="post"><input data-val="true" data-val-number="The field ProductID must be a number." data-val-required="Требуется поле ProductID." id="ProductID" name="ProductID" type="hidden" value="1" /><input id="returnUrl" name="returnUrl" type="hidden" value="/" />                    <input type="submit" value="Добавить в корзину" />
+                                            </form>  
+
+                                            <h4>4&#160;300,00р.</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="blog_item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div>
+                                    <img width="75" height="75" src="/Product/GetImage?ProductID=4" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <h3>Мячи Donier</h3>
+                                    <p>
+                                        Мячи Donier 1* (зеленая коробка).
+
+                                        Материал: целлулоид.
+
+                                        Диаметр 40 мм.
+
+                                        В упаковке 6 шт.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="cart_prise">
+                                    <form action="/Cart/AddToCart" method="post"><input data-val="true" data-val-number="The field ProductID must be a number." data-val-required="Требуется поле ProductID." id="ProductID" name="ProductID" type="hidden" value="4" /><input id="returnUrl" name="returnUrl" type="hidden" value="/" />                    <input type="submit" value="Добавить в корзину" />
+                                    </form>                <h4>350,00р.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="blog_item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div>
+                                    <img width="75" height="75" src="/Product/GetImage?ProductID=5" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Чехол для ракетки Donier</h3>
+                                <p>
+                                    Чехол для ракетки Donier
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="cart_prise">
+                                    <form action="/Cart/AddToCart" method="post"><input data-val="true" data-val-number="The field ProductID must be a number." data-val-required="Требуется поле ProductID." id="ProductID" name="ProductID" type="hidden" value="5" /><input id="returnUrl" name="returnUrl" type="hidden" value="/" />                    <input type="submit" value="Добавить в корзину" />
+                                    </form>                
+                                    <h4>500,00р.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div  class="pagination" >
+                        <ul ><li class="disabled"><span>&laquo;</span></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="/2">2</a></li>
+                            <li><a href="/2">&raquo;</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="down_footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer_text">
+                <div class="col-md-9">
+                    <div class="footer_table">
+                        <ul>
+                            <li>
+                                О компании
+                            </li>
+                            <li>
+                                Сервисы
+
+                            </li>
+                            <li>
+                                Инструкции
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prav">
+        © 2011—2016 My Shop электронный дискаунтер. Все права защищены.
+        Информация на сайте не является публичной офертой.
+    </div>
+</footer>
+
+
+
+<script src="/AllHtml/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="/AllHtml/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="/AllHtml/libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/AllHtml/libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="/AllHtml/libs/scrollto/jquery.scrollTo.min.js"></script>
+<script src="/AllHtml/libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="/AllHtml/libs/landing-nav/navigation.js"></script>
+<script src="/AllHtml/js/common.js"></script>
+
+
+
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"25d02ec31bde4b9d819565d91388117c"}
+</script>
+<script type="text/javascript" src="http://localhost:58335/8cf9e8ac350b42ed8c8506aeacafc684/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
