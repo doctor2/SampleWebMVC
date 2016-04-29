@@ -185,3 +185,6 @@ C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\bi
 C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\bin\ru\System.Web.Helpers.resources.dll
 C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Ivan\Documents\GitHub\SampleWebMVC.git\SportsStore\SportsStore.WebUI\bin\ru\System.Web.Mvc.resources.dll

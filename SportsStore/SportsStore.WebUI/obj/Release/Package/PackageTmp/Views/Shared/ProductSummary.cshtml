@@ -1,20 +1,25 @@
 ﻿@model SportsStore.Domain.Entities.Product
 <div class="blog_item">
     <div class="row">
-        <div class="col-md-12">
-            <div class="col-md-3">
-                @if (Model.ImageData != null)
-                {
-                    <div>
-                        <img width="75" height="75" src="@Url.Action("GetImage", "Product", new {Model.ProductID })" />
-                    </div>
-                }
-            </div>
-            <div class="col-md-7">
+        <div class="col-md-3">
+
+            @if (Model.ImageData != null)
+            {
+                <div class="blog_item_img">
+                    <img width="75" height="75" src="@Url.Action("GetImage", "Product", new {Model.ProductID })" />
+                </div>
+            }
+        </div>
+        <div class="col-md-7">
+            <div class="blog_item_desc">
                 <h3>@Model.Name</h3>
-                @Model.Description
+                <p>
+                    @Model.Description
+                </p>
             </div>
-            <div class="col-md-2">
+            </div>
+        <div class="col-md-2">
+            <div class="row">
                 <div class="cart_prise">
                     @using (Html.BeginForm("AddToCart", "Cart"))
                     {
@@ -24,9 +29,9 @@
                     }
                     <h4>@Model.Price.ToString("c")</h4>
                 </div>
-            </div>       
+            </div> 
+        </div>
     </div>
-</div>
 </div>
 
 

@@ -11,7 +11,9 @@
     @*<link rel="shortcut icon" href="favicon.png" />*@
     @*<link href="~/Content/Site.css" type="text/css" rel="stylesheet" />*@
     @*@Styles.Render("~/Content/css/jqueryui")*@
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/AllHtml/css/css")
+    @Styles.Render("~/AllHtml/libs/font-awesome-4.2.0/css/css")
+    @Styles.Render("~/AllHtml/libs/bootstrap/css")
     @*@RenderSection("styles", required: false)
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Scripts/Product/scroll.js"></script>*@
@@ -136,11 +138,12 @@
 
     </div>*@
 
-    @Scripts.Render("~/AllHtml")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/common")
     @*@Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/common")*@
-    @*@RenderSection("scripts", required: false)*@
+    @RenderSection("scripts", required: false)
 </body>
 </html>
